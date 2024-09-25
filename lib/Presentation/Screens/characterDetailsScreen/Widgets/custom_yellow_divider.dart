@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../constant/my_colors.dart';
 
 class CustomYellowDivider extends StatelessWidget {
@@ -10,7 +11,7 @@ class CustomYellowDivider extends StatelessWidget {
     return Divider(
       color: MyColors.myYellow,
       endIndent: endPoint,
-      height: 30,
+      height: 30.h,
       thickness: 2,
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../Data/Models/character.dart';
 import 'custom_rich_text.dart';
 import 'custom_yellow_divider.dart';
@@ -23,8 +24,7 @@ class CustomSliverListView extends StatelessWidget {
           children: [
             CustomRichText(
                 title: 'Job : ', value: character.location?["name"] ?? ''),
-            CustomYellowDivider(
-                endPoint: MediaQuery.of(context).size.width * 0.82),
+            CustomYellowDivider(endPoint: 290.w),
             CustomRichText(
                 title: 'Appeared in : ',
                 value: character.origin?["name"] ?? ''),
@@ -37,14 +37,14 @@ class CustomSliverListView extends StatelessWidget {
             CustomRichText(title: 'Gender : ', value: character.gender ?? ''),
             CustomYellowDivider(
                 endPoint: MediaQuery.of(context).size.width * 0.76),
-            const SizedBox(
-              height: 20,
+            SizedBox(
+              height: 20.h,
             ),
           ],
         ),
       ),
-      const SizedBox(
-        height: 700,
+      SizedBox(
+        height: 400.h,
       ),
     ]));
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../constant/my_colors.dart';
 
 class CustomSliverAppBar extends StatelessWidget {
@@ -14,7 +15,7 @@ class CustomSliverAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      expandedHeight: 600,
+      expandedHeight: 450.h,
       pinned: true,
       stretch: true,
       backgroundColor: MyColors.myGrey,

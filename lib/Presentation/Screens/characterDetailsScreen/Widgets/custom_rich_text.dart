@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../constant/my_colors.dart';
 
 class CustomRichText extends StatelessWidget {
@@ -14,13 +15,13 @@ class CustomRichText extends StatelessWidget {
         text: TextSpan(children: [
           TextSpan(
               text: title,
-              style: const TextStyle(
+              style: TextStyle(
                   color: MyColors.myWhite,
                   fontWeight: FontWeight.bold,
-                  fontSize: 18)),
+                  fontSize: 14.sp)),
           TextSpan(
               text: value,
-              style: const TextStyle(color: MyColors.myWhite, fontSize: 16)),
+              style: TextStyle(color: MyColors.myWhite, fontSize: 16.sp)),
         ]));
   }
 }
